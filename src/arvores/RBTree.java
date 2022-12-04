@@ -31,7 +31,6 @@ public class RBTree<Key extends Comparable<Key>, Value> {
         return RED && h.cor;
     }
 
-    // Verifica se o nó é preto
     private boolean isBlack(Node h) {
         if(h == null) return true;
         return !(BLACK || h.cor);
@@ -103,9 +102,9 @@ public class RBTree<Key extends Comparable<Key>, Value> {
 
     public void insere(Key key, Value val) {
         intere = null;
-        // Elemento é inserido normalmente
+
         raiz = insere(raiz, key, val, null);
-        // Se há um novo nó, devem ser verificadas as propriedades da árvore
+
         if(intere != null)
             inserePos(intere);
     }
@@ -155,11 +154,10 @@ public class RBTree<Key extends Comparable<Key>, Value> {
                         else
                             raiz = rotacaoEsquerda(pai);
                     }
-                    // E recolore-se pai e avô
-                    trocaCor(pai); //pai.cor = BLACK;
-                    trocaCor(avo); //avo.cor = RED;
 
-                    // Rotaciona o avô à direita
+                    trocaCor(pai);
+                    trocaCor(avo);
+
                     if(avo.pai == null) {
                         raiz = rotacaoDireita(avo);
                     } else {
