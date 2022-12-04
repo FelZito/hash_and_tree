@@ -80,6 +80,7 @@ public class Testes {
             }
         }
 
+        System.out.println("Iniciando operações. Serão realizados " + exp + " experimentos!");
         busca = gerador.randBusca(1, item.length - 1); // Gera aleatoriamente a chave que será buscada
         for (int x = 0; x < exp; x++) {
             for (int i = 0; i < item.length; i++) {
@@ -132,10 +133,10 @@ public class Testes {
                 System.out.println("----------------------");
                 System.out.println("       INSERÇÃO       ");
                 System.out.println("----------------------");
-                System.out.println("Média de tempo para inserção com Hash Tentativa Linear: " + tempoInserir[1] + " milesegundos!");
-                System.out.println("Média de tempo para inserção com Hash Encadeado: " + tempoInserir[2] + " milesegundos!");
-                System.out.println("Média de tempo para inserção com Árvore AVL: " + tempoInserir[1] + " milesegundos!");
-                System.out.println("Média de tempo para inserção com Árvore Rubro-Negro: " + tempoInserir[2] + " milesegundos!");
+                System.out.println("Média de tempo para inserção com Hash Tentativa Linear: " + tempoInserir[0] + " milesegundos!");
+                System.out.println("Média de tempo para inserção com Hash Encadeado: " + tempoInserir[1] + " milesegundos!");
+                System.out.println("Média de tempo para inserção com Árvore AVL: " + tempoInserir[2] + " milesegundos!");
+                System.out.println("Média de tempo para inserção com Árvore Rubro-Negro: " + tempoInserir[3 ] + " milesegundos!");
 
                 System.out.println("\n\n----------------------");
                 System.out.println("         BUSCAS       ");
@@ -155,7 +156,5 @@ public class Testes {
                 System.out.println("Média de tempo para deleção com Árvore AVL: " + tempoRemover[2] + " milesegundos!");
             }
         }
-
-        // Buscas
     }
 }

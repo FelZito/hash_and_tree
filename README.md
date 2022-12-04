@@ -14,4 +14,6 @@
 - [X] insert
 - [X] remove
 
-
+### Fontes
+- https://www.delftstack.com/pt/howto/java/print-arraylist-java/
+- https://docs.oracle.com/javase/tutorial/java/generics/types.html
