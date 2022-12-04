@@ -150,9 +150,9 @@ public class Testes {
                 System.out.println("\n\n----------------------");
                 System.out.println("        REMOÇÃO       ");
                 System.out.println("----------------------");
-                System.out.println("Média de tempo para inserção com Hash Tentativa Linear: " + tempoRemover[0] + " milesegundos!");
-                System.out.println("Média de tempo para inserção com Hash Encadeado: " + tempoRemover[1] + " milesegundos!");
-                System.out.println("Média de tempo para inserção com Árvore AVL: " + tempoRemover[2] + " milesegundos!");
+                System.out.println("Média de tempo para deleção com Hash Tentativa Linear: " + tempoRemover[0] + " milesegundos!");
+                System.out.println("Média de tempo para deleção com Hash Encadeado: " + tempoRemover[1] + " milesegundos!");
+                System.out.println("Média de tempo para deleção com Árvore AVL: " + tempoRemover[2] + " milesegundos!");
             }
         }
 
