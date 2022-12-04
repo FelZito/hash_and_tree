@@ -69,13 +69,14 @@ public class HashLL<Key, Value> {
 
     }
 
-    public void delete(Key key) // ALTERAR
-    {
-        if (key == null)
+    public void delete(Key key) {
+        if (key == null) {
             throw new IllegalArgumentException("Argument to delete() cannot be null");
+        }
 
-        if (!contains(key))
+        if (!contains(key)) {
             return;
+        }
 
         int i = hash(key), j=0;
         Iterator<Key> ki = keys[i].iterator();

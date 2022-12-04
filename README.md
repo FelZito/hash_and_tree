@@ -17,3 +17,5 @@
 ### Fontes
 - https://www.delftstack.com/pt/howto/java/print-arraylist-java/
 - https://docs.oracle.com/javase/tutorial/java/generics/types.html
+- CORMEN, T. H.; LEISERSON, C. E.; RIVEST, R. L.; STEIN, C. Algoritmos: Teoria e Prática. Editora Campus, 2002
+- Ziviani, N. Projeto de Algoritmos Com Implementações em Pascal e C, Cengage Learning, 2004. 

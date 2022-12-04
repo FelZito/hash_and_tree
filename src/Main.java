@@ -8,7 +8,7 @@ import hashs.HashTentativaLinear;
 
 import java.util.Scanner;
 
-public class Testes {
+public class Main {
     public static void geraItens(Item[] item) {
         Gerador gerador = new Gerador();
         for (int i = 0; i < item.length; i++) {
